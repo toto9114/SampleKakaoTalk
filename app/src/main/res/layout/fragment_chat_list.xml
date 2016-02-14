@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sony.samplekakaotalk.ChatListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:id="@+id/chat_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab_menu"
+        fab:menu_colorNormal="@color/fabColor"
+        fab:menu_colorPressed="@color/fabColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end">
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            app:fab_colorNormal="#ffffff"
+            app:fab_colorPressed="#eeeeee"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_openchat" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            app:fab_colorNormal="#ffffff"
+            app:fab_colorPressed="#eeeeee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_secret" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab3"
+            app:fab_colorNormal="#ffffff"
+            app:fab_colorPressed="#eeeeee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_chat" />
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>
